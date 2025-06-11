@@ -1,13 +1,13 @@
 
-<!-- pages/index-home.html -->
-<div class="p-8 text-center space-y-4">
-  <h1 class="text-3xl font-bold mb-4">Welcome to ADL Tracker</h1>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <button class="bg-blue-500 text-white px-4 py-2 rounded" data-page="create-campaign">Create Campaign</button>
-    <button class="bg-green-500 text-white px-4 py-2 rounded" data-page="ai-generator">AI Generator</button>
-    <button class="bg-yellow-500 text-white px-4 py-2 rounded" data-page="instructions">Instructions</button>
-    <button class="bg-purple-500 text-white px-4 py-2 rounded" data-page="contact">Contact</button>
-    <button class="bg-pink-500 text-white px-4 py-2 rounded" data-page="review">Review</button>
-    <button class="bg-red-500 text-white px-4 py-2 rounded" data-page="upgrade">Upgrade Plan</button>
+<div class="text-center p-10">
+  <h1 class="text-4xl font-bold mb-4">Welcome to ADL Tracker</h1>
+  <p class="text-lg text-gray-600">Select an option below to continue</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+    <button onclick="navigateTo('index-campaign.html')" class="btn">Create Campaign</button>
+    <button onclick="navigateTo('index-ai.html')" class="btn">AI Generator</button>
+    <button onclick="navigateTo('index-upgrade.html')" class="btn">Upgrade Plan</button>
+    <button onclick="navigateTo('index-instructions.html')" class="btn">Instructions</button>
+    <button onclick="navigateTo('index-contact.html')" class="btn">Contact Us</button>
+    <button onclick="navigateTo('index-review.html')" class="btn">Review</button>
   </div>
 </div>
