@@ -12,18 +12,26 @@
   <!-- Root container -->
   <div id="app"></div>
 
-  <!-- Load only the homepage layout initially -->
+  <!-- Load HOMEPAGE ONLY (index-home.html) -->
   <script>
     const app = document.getElementById('app');
+
+    // This loads only the homepage layout, with buttons
     fetch('public/pages/index-home.html')
       .then(res => res.text())
       .then(html => {
         app.innerHTML = html;
+
+        // Optional: Trigger JS handlers only after homepage loads
+        if (typeof initializeNavigation === 'function') {
+          initializeNavigation();
+        }
       });
   </script>
 
-  <!-- Handlers -->
+  <!-- JavaScript handlers -->
   <script src="public/js/modal-handler.js"></script>
   <script src="public/js/navigation-handler.js"></script>
 </body>
 </html>
+
