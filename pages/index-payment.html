@@ -1,18 +1,20 @@
-<!-- index-payment.html -->
+<!-- public/pages/index-payment.html -->
 <div id="payment-modal" class="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
   <div class="bg-gradient-to-b from-blue-500 to-blue-600 text-white p-8 rounded-2xl w-full max-w-md relative">
-    
-    <!-- Close button (X) -->
-    <button onclick="closeModal('payment-modal')" class="absolute top-4 right-4 text-white text-2xl font-bold">&times;</button>
 
-    <!-- Header -->
+    <!-- ❌ Close button -->
+    <button onclick="closeModal('payment-modal')" class="absolute top-4 right-4 text-white text-2xl font-bold">
+      &times;
+    </button>
+
+    <!-- 💳 Header -->
     <div class="text-center mb-4">
       <div class="text-3xl font-bold">🔒 Secure Payment</div>
       <div class="text-sm mt-1">Starter Plan - 10/month</div>
       <div class="text-xs opacity-80">Step 2 of 2: Complete Your Subscription</div>
     </div>
 
-    <!-- Payment Method -->
+    <!-- 💳 Payment Method Selection -->
     <div class="mb-4">
       <div class="grid grid-cols-2 gap-2">
         <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-lg w-full">
@@ -24,7 +26,7 @@
       </div>
     </div>
 
-    <!-- Payment Form -->
+    <!-- 💳 Card Entry Form -->
     <div class="space-y-3 text-sm">
       <input type="text" placeholder="Card Number" class="w-full p-2 rounded-md text-black" />
       <div class="grid grid-cols-2 gap-2">
@@ -34,33 +36,33 @@
       <input type="text" placeholder="Cardholder Name" class="w-full p-2 rounded-md text-black" />
     </div>
 
-    <!-- Business Notice -->
+    <!-- 🇦🇺 Australian Business Notice -->
     <div class="bg-white text-blue-900 text-xs p-3 mt-4 rounded-md">
       🇦🇺 <strong>Australian Business Notice</strong><br/>
-      All payments processed by Leffler International Investment Pty Ltd ACN 124 089 345 ABN 90124089345.<br/>
+      All payments processed by Leffler International Investment Pty Ltd ACN 124 089 345 ABN 90124089345<br/>
       GST included in displayed prices for Australian customers.
     </div>
 
-    <!-- Agreement -->
+    <!-- ✅ Agreement Checkbox -->
     <label class="text-xs mt-4 flex items-start space-x-2">
       <input type="checkbox" class="mt-1" />
       <span>I agree to the <a href="#" class="underline">Terms of Service</a>, <a href="#" class="underline">Privacy Policy</a>, and <a href="#" class="underline">Content Guidelines</a>.</span>
     </label>
 
-    <!-- Confirm Payment -->
+    <!-- 🔐 Confirm Button -->
     <button class="mt-4 w-full py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-lg">
       🔐 Complete Secure Payment
     </button>
 
-    <!-- Cancel -->
+    <!-- ❌ Cancel Button -->
     <button onclick="closeModal('payment-modal')" class="mt-2 w-full py-2 bg-white text-blue-600 font-semibold rounded-lg">
       Cancel
     </button>
 
-    <!-- Footer Info -->
+    <!-- 💳 Footer -->
     <div class="text-xs text-white text-center mt-3 opacity-80">
-      💳 Visa · Mastercard · American Express · 🅿️ PayPal Accepted<br/>
-      🔐 Secured by Australian Financial Services
+      🛡️ Visa · Mastercard · PayPal Accepted<br/>
+      Secured by Australian Financial Services
     </div>
   </div>
 </div>
