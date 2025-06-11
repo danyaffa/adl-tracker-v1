@@ -2,7 +2,7 @@
 <div id="payment-modal" class="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
   <div class="bg-gradient-to-b from-blue-500 to-blue-600 text-white p-8 rounded-2xl w-full max-w-md relative">
     
-    <!-- Close button -->
+    <!-- Close button (X) -->
     <button onclick="closeModal('payment-modal')" class="absolute top-4 right-4 text-white text-2xl font-bold">&times;</button>
 
     <!-- Header -->
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <!-- Card Form -->
+    <!-- Payment Form -->
     <div class="space-y-3 text-sm">
       <input type="text" placeholder="Card Number" class="w-full p-2 rounded-md text-black" />
       <div class="grid grid-cols-2 gap-2">
@@ -34,10 +34,10 @@
       <input type="text" placeholder="Cardholder Name" class="w-full p-2 rounded-md text-black" />
     </div>
 
-    <!-- Australian Notice -->
+    <!-- Business Notice -->
     <div class="bg-white text-blue-900 text-xs p-3 mt-4 rounded-md">
       🇦🇺 <strong>Australian Business Notice</strong><br/>
-      All payments processed by Leffler International Investment Pty Ltd ACN 124 089 345 ABN 90124089345<br/>
+      All payments processed by Leffler International Investment Pty Ltd ACN 124 089 345 ABN 90124089345.<br/>
       GST included in displayed prices for Australian customers.
     </div>
 
@@ -47,20 +47,20 @@
       <span>I agree to the <a href="#" class="underline">Terms of Service</a>, <a href="#" class="underline">Privacy Policy</a>, and <a href="#" class="underline">Content Guidelines</a>.</span>
     </label>
 
-    <!-- Confirm Button -->
+    <!-- Confirm Payment -->
     <button class="mt-4 w-full py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-lg">
       🔐 Complete Secure Payment
     </button>
 
-    <!-- Cancel Button -->
+    <!-- Cancel -->
     <button onclick="closeModal('payment-modal')" class="mt-2 w-full py-2 bg-white text-blue-600 font-semibold rounded-lg">
       Cancel
     </button>
 
-    <!-- Footer logos -->
+    <!-- Footer Info -->
     <div class="text-xs text-white text-center mt-3 opacity-80">
-      🛡️ Visa · Mastercard · PayPal Accepted<br/>
-      Secured by Australian Financial Services
+      💳 Visa · Mastercard · American Express · 🅿️ PayPal Accepted<br/>
+      🔐 Secured by Australian Financial Services
     </div>
   </div>
 </div>
